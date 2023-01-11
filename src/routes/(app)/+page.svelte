@@ -9,7 +9,7 @@
 	<div class="wrapper">
 		<div class="picture">
 			<!-- svelte-ignore a11y-img-redundant-alt -->
-			<img src="/src/lib/assets/images/Asbel-picture-complete.png" alt="An Image of me " />
+			<img src="./src/lib/assets/images/Asbel-picture-complete.png" alt="An Image of me " />
 		</div>
 
 		<article>
