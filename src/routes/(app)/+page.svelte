@@ -3,13 +3,14 @@
 	import Sveltkit from '$lib/assets/images/sveltekit.png';
 	import Button from '$lib/PollsComponents/shared/Button.svelte';
 	import { fly, slide, scale, fade } from 'svelte/transition';
+	import Completepic from '$lib/assets/images/Asbel-picture-complete.png';
 </script>
 
 <main>
 	<div class="wrapper">
 		<div class="picture">
 			<!-- svelte-ignore a11y-img-redundant-alt -->
-			<img src="./src/lib/assets/images/Asbel-picture-complete.png" alt="An Image of me " />
+			<img src={Completepic} alt="An Image of me " />
 		</div>
 
 		<article>
