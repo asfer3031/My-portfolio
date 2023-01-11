@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "roboto";
+    src: url(/src/lib/assets/fonts/roboto/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: "roboto-slab";
+    src: url(/src/lib/assets/fonts/roboto-slab/RobotoSlab-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "open-sans";
+    src: url(/src/lib/assets/fonts/open-sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: "GreatVibes";
+    src: url(/src/lib/assets/fonts/GreatVibes/GreatVibes-Regular.ttf);
+}
