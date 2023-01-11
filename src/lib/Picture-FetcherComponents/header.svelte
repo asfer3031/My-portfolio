@@ -81,14 +81,6 @@
 				> free Api.
 			</p>
 		</div>
-
-		<!-- <div class="info">
-                 <ul>
-                  <a href=""><img class="a-tag" src={Linkedin} alt="link"></a>
-                  <a href=""><img class="a-tag" src={Github} alt="git"></a>
-                  <a href=""><img class="a-tag" src={Facebook} alt="facebook"></a>
-                </ul> 
-              </div> -->
 	</header>
 </main>
 

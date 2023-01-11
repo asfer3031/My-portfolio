@@ -14,7 +14,7 @@ export let projects = [
             "This project demonsttrates how we can fetch data from a database that is not local.",
         url: '/Projects/Picture-Fetcher',
         Cardfootertitle: 'A huge thanks to Unsplash.',
-        cardfooterimageUrl: 'src/lib/assets/images/unsplash.png'
+        cardfooterimageUrl: '/src/lib/assets/images/unsplash.png'
     },
     {
         id: 'Polls Maker',
@@ -23,7 +23,7 @@ export let projects = [
             ' I was able to build this project following a youtube tutorial done By The Net Ninja.',
         url: '/Projects/Polls',
         Cardfootertitle: 'A huge thanks to The Net Ninja.',
-        cardfooterimageUrl: 'src/lib/assets/images/unnamed.jpg'
+        cardfooterimageUrl: '/src/lib/assets/images/unnamed.jpg'
     },
 
 ];
