@@ -1,18 +1,14 @@
 <script lang="ts">
 	import Close from '$lib/assets/images/circle-xmark-solid.svg';
 	import { fly, slide, scale, fade } from 'svelte/transition';
+	import Resume from '$lib/assets/documents/Asbel_Fernandez_Resume.pdf';
 </script>
 
 <main in:scale out:scale>
 	<div class="header">
 		<a class="btn1" href="/"><img src={Close} alt="" /></a>
 	</div>
-	<embed
-		src="./src/lib/assets/documents/Asbel_Fernandez_Resume.pdf"
-		type="application/pdf"
-		width="100%"
-		height="600px"
-	/>
+	<embed src={Resume} type="application/pdf" width="100%" height="600px" />
 </main>
 
 <style>
