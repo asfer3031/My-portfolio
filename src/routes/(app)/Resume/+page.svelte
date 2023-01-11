@@ -8,7 +8,7 @@
 		<a class="btn1" href="/"><img src={Close} alt="" /></a>
 	</div>
 	<embed
-		src="src/lib/assets/documents/Asbel_Fernandez_Resume.pdf"
+		src="/src/lib/assets/documents/Asbel_Fernandez_Resume.pdf"
 		type="application/pdf"
 		width="100%"
 		height="600px"
