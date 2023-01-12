@@ -8,11 +8,16 @@
 	<div class="header">
 		<a class="btn1" href="/"><img src={Close} alt="" /></a>
 	</div>
-	<p>Open PDF file <a href={Resume} target="_self">Asbel Fernandez Resume</a>.</p>
-	<!-- <iframe src={Resume} type="application/pdf" width="100%" height="600px" /> -->
+
+	<a href={Resume} target="_self">Asbel Fernandez Resume</a>
+
+	<embed src={Resume} type="application/pdf" width="100%" height="800px" />
 </main>
 
 <style>
+	main > a {
+		display: none;
+	}
 	.header {
 		display: flex;
 		height: 50px;
@@ -47,5 +52,28 @@
 		border-radius: 50%;
 		height: 38px;
 		width: 38px;
+	}
+
+	@media only screen and (max-width: 1000px) {
+		main > embed {
+			display: none;
+		}
+
+		main > a {
+			height: 50px;
+			width: 200px;
+			background-color: rgba(3, 3, 3, 0.5);
+			border-radius: 6px;
+			margin: 50% auto;
+			padding: 1rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			color: #fff7;
+			font-weight: 200;
+			text-decoration: none;
+			font-size: 1.2rem;
+		}
 	}
 </style>
