@@ -8,7 +8,7 @@
 	<div class="header">
 		<a class="btn1" href="/"><img src={Close} alt="" /></a>
 	</div>
-	<p>Open a PDF file <a href={Resume}>Asbel Fernandez resume</a>.</p>
+	<p>Open PDF file <a href={Resume} target="_self">Asbel Fernandez Resume</a>.</p>
 	<!-- <iframe src={Resume} type="application/pdf" width="100%" height="600px" /> -->
 </main>
 
