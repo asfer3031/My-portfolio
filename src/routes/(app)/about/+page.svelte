@@ -44,13 +44,19 @@
 					<h2>Here is who I am and what I aspire.</h2>
 
 					<p>
-						I was born on September 30th 1987. I enjoy sports and music production. However, I have
-						a passion for programming. I have always been curious about how we communicate and share
-						data across the internet. I grew an interest for Information Technology after my first
-						year at Centro Escolar Mexico Junior College. I was convinced that I wanted to excel in
-						this field. Technology is a very broad field that one cannot know it all but we can go
-						as far as we limit ourselves to. I am determined to work hard to go beyond my
-						limitations.
+						I was born on September 30th 1987. As a recent graduate with an Associate Degree in
+						Information Technology, I am eager to start my career as a programmer. I have a strong
+						theoretical understanding of programming languages such as C++ and JavaScript and am
+						eager to apply my knowledge in a practical setting. I am 35 years old, but I possess a
+						lot of energy and drive to learn and become proficient in programming. <br /> <br />I am
+						a quick learner and am able to adapt to new technologies and programming languages
+						quickly. To showcase my skills, I have built a website portfolio that features two
+						projects that I have completed. These projects have given me hands-on experience in
+						website development and have allowed me to apply my programming knowledge in a
+						real-world setting. I am confident that my theoretical knowledge, combined with my
+						eagerness to learn and adapt, make me a suitable candidate for any programming role. I
+						am excited about the opportunity to work with a team of experienced professionals and to
+						contribute to the success of the organization.
 					</p>
 
 					<div class="quote">

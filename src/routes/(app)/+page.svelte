@@ -21,12 +21,7 @@
 					As an aspiring front-end web developer, I am excited about the opportunity to bring my
 					skills and knowledge to an organization. I have a strong theoretical understanding of
 					programming languages and am eager to apply my knowledge in a practical setting. I am a
-					quick learner and am able to adapt to new technologies quickly. I am motivated to learn
-					and become proficient in front-end web development. I am determined to develop my skills,
-					and I am always looking for new ways to improve my abilities, I am highly motivated and
-					have a lot of energy to learn and grow in this field. My goal is to become a Front-end
-					developer who creates visually appealing and user-friendly websites that are optimized for
-					various devices and platforms.
+					quick learner and am able to adapt to new technologies quickly.
 				</p>
 			</span>
 		</article>
