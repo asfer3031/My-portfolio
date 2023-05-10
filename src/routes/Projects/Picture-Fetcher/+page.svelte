@@ -153,6 +153,7 @@
 		height: 100%;
 		background-color: #101010;
 		scroll-behavior: smooth;
+		transition: ease-in-out 0.3s;
 	}
 	.up-botton {
 		height: 50px;
