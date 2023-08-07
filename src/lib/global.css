@@ -4,6 +4,12 @@
 }
 
 @font-face {
+    font-family: "Poppins";
+    src: url(/src/lib/assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+
+@font-face {
     font-family: "roboto-slab";
     src: url(/src/lib/assets/fonts/roboto-slab/RobotoSlab-VariableFont_wght.ttf);
 }
@@ -16,4 +22,14 @@
 @font-face {
     font-family: "GreatVibes";
     src: url(/src/lib/assets/fonts/GreatVibes/GreatVibes-Regular.ttf);
+}
+
+@font-face {
+    font-family: "whisper";
+    src: url(/src/lib/assets/fonts/Whisper/Whisper-Regular.ttf);
+}
+
+@font-face {
+    font-family: "marckscript";
+    src: url(/src/lib/assets/fonts/MarckScript/MarckScript-Regular.ttf);
 }

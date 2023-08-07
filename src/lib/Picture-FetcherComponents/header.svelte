@@ -50,9 +50,14 @@
 			</div>
 
 			<div class="a-button">
-				<a href="/Projects" on:click={toggleUl}>
-					<img src={Button} alt="" />
-				</a>
+				<a href="/Projects"
+					><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+						><path
+							fill="currentColor"
+							d="M21 11H6.414l5.293-5.293l-1.414-1.414L2.586 12l7.707 7.707l1.414-1.414L6.414 13H21z"
+						/></svg
+					> Back to projects</a
+				>
 			</div>
 		</div>
 
@@ -192,6 +197,7 @@
 		padding: 1rem;
 		background-color: rgba(255, 255, 255, 0.185);
 		border-bottom: 0.5px solid #333;
+		margin-top: 80px;
 	}
 	.first > div:nth-child(1) {
 		height: 100%;
@@ -204,38 +210,18 @@
 		place-content: center;
 	}
 
-	.a-button {
-		height: 100%;
-		width: 100%;
-		box-sizing: border-box;
-	}
-
-	.a-button > a {
-		margin: 0;
-		padding: 0;
-		height: 2rem;
-		width: 2rem;
-		cursor: pointer;
-		/* background-color: #fff; */
-		border-radius: 6px;
+	.a-button a {
 		text-decoration: none;
-		box-shadow: 0;
-		border: 0;
-	}
-
-	.a-button > a > img {
-		height: 100%;
+		margin-right: 28px;
+		font-family: 'poppins';
+		color: #ccc;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
 		width: 100%;
-		margin: 0;
-		padding: 0;
-		border-radius: 6px;
-		border: 0;
 	}
-
-	.a-button > a:hover {
-		opacity: 0.9;
-		background-color: #fff;
-		border-radius: 6px;
+	.a-button a:hover {
+		color: rgba(0, 0, 0, 0.8);
 	}
 
 	.Title {

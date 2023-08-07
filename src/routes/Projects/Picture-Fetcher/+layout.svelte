@@ -3,7 +3,6 @@
 	import Footer from '$lib/Picture-FetcherComponents/Footer.svelte';
 </script>
 
-<!-- <NavBar /> -->
 <slot />
 <Footer />
 

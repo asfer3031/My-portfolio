@@ -17,21 +17,21 @@
 	}
 </script>
 
+<h1 class="title">Projects</h1>
+
 <ul in:scale out:scale>
 	{#each projects as item, i}
 		<li>
 			<!-- svelte-ignore a11y-invalid-attribute -->
 			<a href={item.url} on:click={() => setUlactive(i)}>
 				<div class="card">
-					<div class="card-image" style="background-image: url({item.picture});" />
-					<div class="project-info">
+					<div class="card-header">
+						<img src={item.picture} alt="" />
 						<p class="name">{item.id}</p>
+					</div>
+
+					<div class="project-info">
 						<p>{item.description}</p>
-						<div class="card-footer">
-							<div class="card-footercontent">
-								{item.Cardfootertitle} <img src={item.cardfooterimageUrl} alt="" />
-							</div>
-						</div>
 					</div>
 				</div>
 			</a>
@@ -40,25 +40,33 @@
 </ul>
 
 <style>
+	.title {
+		color: rgb(251, 250, 249);
+		font-weight: 300;
+		font-size: 2rem;
+		font-family: sans-serif;
+		background-color: #a3ada3;
+		box-sizing: border-box;
+		padding: 0.5rem;
+		text-align: start;
+		margin-top: 90px;
+		text-transform: uppercase;
+	}
 	ul {
+		margin-top: 20px;
 		list-style: none;
 		display: flex;
-		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-		height: 100%;
-		margin: 0;
-		padding: 1rem;
+		padding: 0;
 		box-sizing: border-box;
 	}
 
 	ul > li {
-		margin: 1rem 0 1rem 0;
+		margin: 20px;
 		padding: 0;
 		box-sizing: border-box;
-		width: 80%;
-		border-radius: 6px;
 	}
 
 	ul > li > a {
@@ -66,84 +74,52 @@
 		margin: 0;
 		padding: 0;
 	}
-	ul > li > a:hover {
-		cursor: pointer;
-	}
-
-	.card {
-		height: 200px;
-		width: 100%;
-		position: relative;
-		border-radius: 6px;
-		display: grid;
-		grid-template-columns: 1.5fr 2.5fr;
-		border: 1px solid rgb(202, 200, 200);
-		background-color: #fff;
-		box-shadow: 0 0 3px 2px #5553;
-	}
 	.card:hover {
-		box-shadow: 0 0 3px 2px rgba(53, 53, 53, 0.719);
+		cursor: pointer;
+		box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 6);
+		transition: ease-in-out 0.2s;
+		scale: (1);
 	}
-
-	.card > div:nth-child(2) {
+	.card-header {
+		text-align: center;
 		width: 100%;
-	}
-
-	.card-image {
-		height: 100%;
-		background-position: center;
-		background-size: cover;
-		background-repeat: no-repeat;
-		border-radius: 6px 0px 0 6px;
-	}
-	.card-footer {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		height: 40px;
-		width: 100%;
-		background-color: #101010;
-		border-radius: 0 0px 6px 0px;
-
 		box-sizing: border-box;
+		border-radius: 5px 5px 0 0;
+		padding: 0.3rem;
 		display: flex;
-		justify-content: flex-end;
-		align-items: flex-end;
-		color: #fff;
-	}
-	.card-footercontent {
-		height: 100%;
-		width: auto;
-
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		align-items: center;
-		box-sizing: border-box;
+
+		margin: 0;
 	}
-	.card-footercontent > img {
-		height: 100%;
-		width: 40px;
-		margin-left: 10px;
-		padding: 0;
-		box-sizing: border-box;
-		border: 0.5px;
-		border: 0.5px solid #101010;
-		border-radius: 0 0 6px 0;
+	.card-header p {
+		font-size: 26px;
+		font-family: 'Poppins';
+		font-weight: 200;
 	}
+	.card-header img {
+		height: 80px;
+		width: 80px;
+		object-fit: scale-down;
+		border-radius: 5px;
+	}
+
 	.project-info {
 		width: 100%;
 		height: 100%;
-		padding: 1rem;
+		padding: 5px;
 		box-sizing: border-box;
-		position: relative;
+		text-align: center;
+		word-wrap: normal;
+		margin: 0;
 	}
 	.project-info > p {
-		font-size: 1rem;
+		font-size: 14px;
 		color: #101010;
 		flex-wrap: wrap;
 		text-align: center;
 		font-family: 'roboto-slab';
+		margin: 0;
 	}
 	.name {
 		font-size: 1rem;
@@ -151,48 +127,66 @@
 		color: #101010;
 		font-weight: bold;
 	}
-
-	@media only screen and (max-width: 700px) {
+	.card {
+		position: relative;
+		background-color: #fff;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		margin: 0;
+		padding: 20px;
+		width: 300px;
+		min-height: 220px;
+	}
+	@media only screen and (max-width: 1200px) {
 		/* For mobile phones: */
 		ul {
-			list-style: none;
-			display: flex;
-			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+			flex-wrap: wrap;
 			width: 100%;
 			margin: 0;
 			padding: 0;
 		}
-		.card {
-			min-height: 400px;
-			height: auto;
-			width: 300px;
+	}
+	@media only screen and (max-width: 1145px) {
+		/* For mobile phones: */
+		ul {
 			display: grid;
-			grid-template-columns: 1fr;
-			margin: 0;
-			border-radius: 6px 6px 0 0;
+			grid-template-columns: 1fr 1fr;
+			place-content: center;
+			width: 70%;
+			margin: 0 auto;
 		}
-
-		.card-image {
-			width: 100%;
-			height: 40%;
-			background-position: center;
-			background-size: cover;
-			background-repeat: no-repeat;
-			border-radius: 6px 6px 0 0;
+		.card {
+			margin: 0 auto;
 		}
-		.project-info {
-			height: 60%;
-			position: absolute;
-			bottom: 0;
-			width: 100%;
-			border-radius: 0px 0 6px 6px;
-			padding: 5px;
+	}
+	@media only screen and (max-width: 1060px) {
+		ul {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			place-content: center;
+			width: 80%;
+			margin: 0 auto;
 			box-sizing: border-box;
+			padding: 0 20%;
 		}
-		.card-footer {
-			border-radius: 0;
+	}
+	@media only screen and (max-width: 950px) {
+		ul {
+			width: 90%;
+		}
+	}
+	@media only screen and (max-width: 850px) {
+		ul {
+			width: 100%;
+		}
+	}
+	@media only screen and (max-width: 750px) {
+		ul {
+			width: 100%;
+			grid-template-columns: 1fr;
 		}
 	}
 </style>
