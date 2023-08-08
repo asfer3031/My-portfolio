@@ -15,6 +15,8 @@
 		color: #333;
 		position: absolute;
 		background-color: #fbfaf9;
+		position: absolute;
+		z-index: 2000;
 	}
 
 	.loading-spinner {
