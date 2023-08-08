@@ -131,7 +131,7 @@
 			sessionStorage.setItem('myString', inputValue);
 		}
 		isLoading.update((isLoading) => (isLoading = true));
-		window.location.href = '/detailedpage';
+		window.location.href = '/Projects/E-shop/detailedpage';
 	}
 
 	function handleInputFocus() {

@@ -487,7 +487,7 @@
 			padding: 5px 15px;
 		}
 		.wrapper {
-			margin-top: 200px;
+			margin-top: 230px;
 		}
 	}
 	@media screen and (max-width: 1100px) {

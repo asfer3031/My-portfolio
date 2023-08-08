@@ -306,7 +306,7 @@
 			padding: 5px 15px;
 		}
 		.title {
-			margin-top: 180px;
+			margin-top: 230px;
 		}
 	}
 	@media screen and (max-width: 1100px) {
