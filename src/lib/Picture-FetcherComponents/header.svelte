@@ -279,7 +279,7 @@
 			align-items: center;
 		}
 		.first {
-			margin: 0;
+			margin-top: 83px;
 		}
 
 		.header {

@@ -4,6 +4,7 @@ import { writable } from 'svelte/store';
 export let categoryNewValue = writable('');
 
 export const productsStore = writable([]);
+export const isLoading = writable(false);
 
 
 
@@ -33,6 +34,7 @@ function updateProducts(newProducts) {
 }
 
 export async function fetchProducts() {
+    isLoading.set(true);
     try {
         const response = await fetch('https://dummyjson.com/products?limit=100');
         if (!response.ok) {
@@ -51,13 +53,13 @@ export async function fetchProducts() {
     } catch (error) {
         console.error(error);
     }
-
+    isLoading.set(false);
 
 
 }
 
 export const filteredProducts = writable([]);
-export const isLoading = writable(false);
+
 
 export function filterProductsByCategory() {
     var mystring = sessionStorage.getItem('myString');

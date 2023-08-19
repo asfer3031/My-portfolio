@@ -601,6 +601,9 @@
 			padding: 0.5rem;
 			text-align: start;
 		}
+		.wrapper {
+			margin-top: 240px;
+		}
 	}
 
 	@keyframes slidein {

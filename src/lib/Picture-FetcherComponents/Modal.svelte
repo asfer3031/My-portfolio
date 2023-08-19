@@ -35,7 +35,7 @@
 		width: 100%;
 		height: 100%;
 		background: rgba(0, 0, 0, 0.8);
-		z-index: 5;
+		z-index: 1000;
 	}
 	@media all and (max-width: 780px) {
 		.inner {

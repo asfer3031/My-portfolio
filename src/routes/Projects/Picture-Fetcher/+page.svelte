@@ -67,14 +67,19 @@
 	 * @param {number} inPos
 	 */
 	function getAllelements(inPos) {
-		toggleModal();
+		toggleModalOn();
 		newindex = inPos;
 		picId = data.items[newindex].id;
 		// newHeight = data.items[newindex].height + 'px';
 	}
 
-	const toggleModal = () => {
+	const toggleModalOn = () => {
 		showModal = !showModal;
+		document.documentElement.style.overflow = 'hidden';
+	};
+	const toggleModalOff = () => {
+		showModal = !showModal;
+		document.documentElement.style.overflow = 'auto';
 	};
 
 	function scrollUP() {
@@ -86,9 +91,9 @@
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 
 <main class="main">
-	<Modal {showModal} on:click={toggleModal}>
+	<Modal {showModal} on:click={toggleModalOff}>
 		<div class="modal-header">
-			<button class="btn1" on:click={toggleModal}><img src={Close} alt="" /></button>
+			<button class="btn1" on:click={toggleModalOff}><img src={Close} alt="" /></button>
 			<!-- <button class="btn" type="submit" value="download" on:click={downloadPicture}>DOWNLOAD</button -->
 		</div>
 		<div class="image-container">

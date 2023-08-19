@@ -274,7 +274,7 @@
 
 			<ul>
 				<li>
-					<button on:click={() => letLoading('/')}
+					<button on:click={() => letLoading('/Projects/E-shop')}
 						><a href="#"><i class="my-icon"><Icon icon="octicon:home-24" /></i> All Products</a
 						></button
 					>
@@ -782,7 +782,7 @@
 	.side-menu {
 		height: 100vh;
 		width: 100%;
-		background-color: rgba(0, 0, 0, 0.4);
+		background-color: rgba(0, 0, 0, 0.6);
 		position: fixed;
 		left: 0;
 		top: 0;
